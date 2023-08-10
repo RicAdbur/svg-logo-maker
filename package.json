@@ -1,0 +1,26 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "A simple command-line application for generating SVG logos.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicAdbur/svg-logo-maker.git"
+  },
+  "author": "RicAdbur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicAdbur/svg-logo-maker/issues"
+  },
+  "homepage": "https://github.com/RicAdbur/svg-logo-maker#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  }
+}
