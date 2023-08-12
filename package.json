@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple command-line application for generating SVG logos.",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "tests"
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/RicAdbur/svg-logo-maker#readme",
   "dependencies": {
     "inquirer": "^9.2.10"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
   }
 }
