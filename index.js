@@ -2,6 +2,7 @@ import fs from "fs"
 import inquirer from "inquirer"
 import { Circle, Square, Triangle } from "./lib/shapes.js"
 import { questions } from "./lib/questions.js"
+import { renderLogo } from "./lib/renderLogo.js"
 
 function init() {
     inquirer.prompt(questions)

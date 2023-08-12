@@ -1,5 +1,5 @@
 
 // test suite
 describe("", () => {
-    test()
+    it()
 })
