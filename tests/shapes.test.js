@@ -1,5 +1,11 @@
+import * as Shapes from "../lib/shapes"
 
 // test suite
 describe("", () => {
-    it()
+    it("", () => {
+        // Arrange
+        // Act
+        // Assert
+    })
+
 })
