@@ -1,6 +1,6 @@
-import fs from "fs"
+// importing necessary modules from other files
+import { writeFile } from "fs/promises"
 import inquirer from "inquirer"
-import { Circle, Square, Triangle } from "./lib/shapes.js"
 import { questions } from "./lib/questions.js"
 import { generateLogo } from "./lib/generateLogo.js"
 
@@ -8,8 +8,11 @@ import { generateLogo } from "./lib/generateLogo.js"
 function init() {
     inquirer.prompt(questions)
     .then((answers => {
-        console.log("answers", answers)
-        generateLogo("logo.svg", answers)
+        // runs function to generate the SVG file based on inquirer responses
+        const logo = generateLogo(answers)
+        // writes new SVG file and outputs to the examples folder
+        console.log("Logo created!")
+        return writeFile("./examples/newLogo.svg", logo)
     }))
     .catch((error) => {
         console.log(error)
